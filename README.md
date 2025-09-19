@@ -1,4 +1,4 @@
-# IntelliAgent-Graph
+# Agentic AI Chatbot Using LangGraph
 
 This project demonstrates how to build an **Agentic Workflow** using LangChain, LangGraph, and multiple external tools (Arxiv, Wikipedia, Tavily). 
 The agent queries research papers, Wikipedia, Tavily Search, and generates responses using Groq-powered LLM.
@@ -15,27 +15,26 @@ The agent queries research papers, Wikipedia, Tavily Search, and generates respo
 ---
 
 ## 📂 Project Structure
-- `agentic.ipynb` → Jupyter notebook for running the agent.
+- `Agent_chatbot.ipynb` → Jupyter notebook for running the agent.
 - `requirements.txt` → Dependencies required for the project.
-
+- `.env` → Store environment variables.
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/IntelliAgent-Graph.git
-cd IntelliAgent-Graph
+git clone https://github.com/AnandhuSaji007/Agentic-Chatbot
+cd Agentic-Chatbot
 ```
 
 ### 2️⃣ Create a Virtual Environment
 ```bash
-python -m venv agent
+conda create -p venv python=3.12 -y
 ```
 
 Activate it:
-- **Windows**: `agent\Scripts\activate`
-- **Linux/Mac**: `source agent/bin/activate`
+- **Windows**: `conda activate venv/`
 
 ### 3️⃣ Install Dependencies
 ```bash
@@ -45,10 +44,8 @@ pip install -r requirements.txt
 ### 4️⃣ Run the Agent
 Open Jupyter Notebook and run:
 ```bash
-jupyter notebook agentic.ipynb
+Agent_chatbot.ipynb
 ```
-
----
 
 ## 🛠️ Code Overview
 
@@ -77,12 +74,6 @@ for m in messages["messages"]:
 
 ---
 
-## ✅ Next Steps
-- Extend the agent with more tools.
-- Connect to custom knowledge bases.
-- Add memory for multi-turn conversations.
-
----
 
 ## 📌 Author
-Developed by **Your Name**
+Developed by **Anandhu Saji**
